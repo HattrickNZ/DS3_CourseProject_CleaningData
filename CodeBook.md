@@ -1,14 +1,18 @@
-
-But the basic format of that book is 
-variable name
-variable field width
-variable definition
-range of values
-
 #Code Book
 
-The following varaiable names uses these abbreviations to make up there names : 
- 
+### NOTE: REGARDING COURSE ASSIGNMENT 
+Unfortunately there was a bug in my code that I did not get fixed in time for the deadline.
+It basically was that the column names where not correct and that they where offset by 3 places. 
+I have tried to note this where possible. 
+
+#####testUser_Mean  (this should read `tBodyAccMeanX_Mean`)
+#####Activity_Mean  (this should read `tBodyAccMeanY_Mean`)
+#####tBodyAccMeanX_Mean (this should read `tBodyAccMeanZ_Mean`)
+#####tBodyAccMeanY_Mean
+
+
+####The following variaable names uses these abbreviations to make up there names : 
+ '''
  t = time 
  f = frequency 
  Body
@@ -23,6 +27,7 @@ The following varaiable names uses these abbreviations to make up there names :
  Mag
  Freq 
  Std = standerd deviation
+ '''
  
 
 ##### testUser        
@@ -109,4 +114,3 @@ The following varaiable names uses these abbreviations to make up there names :
 #####fBodyAccMagStd_Mean
 #####fBodyBodyAccJerkMagStd_Mean 
 
-[79] "fBodyBodyAccJerkMagStd_Mean"       "fBodyBodyGyroMagStd_Mean"          "fBodyBodyGyroJerkMagStd_Mean" 

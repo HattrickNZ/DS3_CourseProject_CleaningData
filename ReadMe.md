@@ -17,6 +17,15 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
+
+### NOTE: REGARDING COURSE ASSIGNMENT 
+Unfortunately there was a bug in my code that I did not get fixed in time for the deadline.
+It basically was that the column names where not correct and that they where offset by 3 places. 
+I have tried to note this where possible. 
+Regarding the R code I will commit the latest and correct version. 
+
+
+
 ### Where to start 
 
 To get started download the above zip file into a directory and unzip it.
