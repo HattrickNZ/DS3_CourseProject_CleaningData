@@ -32,10 +32,11 @@ To get started download the above zip file into a directory and unzip it.
 
 use `dir()` to see that the dataset is in the directory. it will be seen as "UCI HAR Dataset"
 
+```
 Then run the code as follows:
 1. source("run_analysis.R")
 2. run_analysis()
-
+```
 
 ####An example of this code being run
 ```
