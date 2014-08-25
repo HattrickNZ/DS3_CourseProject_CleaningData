@@ -1,6 +1,6 @@
 #Code Book
 
-'''
+```
 ### NOTE: REGARDING COURSE ASSIGNMENT 
 Unfortunately there was a bug in my code that I did not get fixed in time for the deadline.
 It basically was that the column names where not correct and that they where offset by 3 places. 
@@ -12,7 +12,7 @@ I have tried to note this where possible.
 #####tBodyAccMeanY_Mean
 
 Regarding the R code I will commit the latest and correct version. 
-'''
+```
 
 ####The following variaable names uses these abbreviations to make up there names: 
  '''
