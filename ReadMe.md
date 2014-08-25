@@ -39,7 +39,10 @@ Then run the code as follows:
 ```
 
 ####An example of this code being run
+
 ```
+> dir()
+ "UCI HAR Dataset"
 > source("run_analysis.R")
 > fd<-run_analysis()
 There were 50 or more warnings (use warnings() to see the first 50)
