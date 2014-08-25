@@ -1,5 +1,3 @@
-THis will be my read me file 
-
 ### Introduction
 
 This is a Course Project for Getting and Cleaning Data of the Data Science Specialization course offered by Johns Hopkins University on coursera.org.
@@ -22,9 +20,13 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ### Where to start 
 
 To get started download the above zip file into a directory and unzip it.
+
+use `dir()` to see that the dataset is in the directory. it will be seen as "UCI HAR Dataset"
+
 Then run the code as follows:
-source("run_analysis.R")
-run_analysis()
+1. source("run_analysis.R")
+2. run_analysis()
+
 
 
 

@@ -1,135 +1,110 @@
-this will be my codebook use quiz 1 as an example 
 
- DATA DICTIONARY - 2006 HOUSING
-RT 1 
- Record Type
- H .Housing Record or Group Quarters Unit
-SERIALNO 7 
- Housing unit/GQ person serial number 
- 0000001..9999999 .Unique identifier assigned within
- .state 
-DIVISION 1 
- Division code
- 0 .Puerto Rico
- 1 .New England (Northeast region)
- 2 .Middle Atlantic (Northeast region)
- 3 .East North Central (Midwest region)
- 4 .West North Central (Midwest region)
- 5 .South Atlantic (South region)
- 6 .East South Central (South region)
- 7 .West South Central (South Region)
- 8 .Mountain (West region)
- 9 .Pacific (West region)
- 
- But the basic format of that book is 
+But the basic format of that book is 
 variable name
 variable field width
 variable definition
 range of values
 
+#Code Book
 
-These are all the variables 
- TestUser
- 1-30 this is the 30 volunteers   NoteA  there is 9 voluteers where in the test data 
- Activity
- values between 1 to 6  this refers to the activity labels -> WALKING...LAYING
- testTrain                   
- train/test  this is either train dataset or test dataset 
- 
  In the following: 
  
  t = time 
  f = frequency 
  Body
- Acc
+ Acc 
  Mean 
- X
- Y
- Z 
+ X = x-axis
+ Y = y-axis
+ Z = z-axis
  Gravity
  Jerk
  Gyro
  Mag
  Freq 
- Std 
+ Std = standerd deviation
  
- 
-tBodyAccMeanX
-tBodyAccMeanY                
-tBodyAccMeanZ               
-tGravityAccMeanX             
-tGravityAccMeanY             
-tGravityAccMeanZ            
-tBodyAccJerkMeanX            
-tBodyAccJerkMeanY            
-tBodyAccJerkMeanZ           
-tBodyGyroMeanX               
-tBodyGyroMeanY               
-tBodyGyroMeanZ              
-tBodyGyroJerkMeanX           
-tBodyGyroJerkMeanY           
-tBodyGyroJerkMeanZ          
-tBodyAccMagMean              
-tGravityAccMagMean           
-tBodyAccJerkMagMean         
-tBodyGyroMagMean             
-tBodyGyroJerkMagMean         
-fBodyAccMeanX               
-fBodyAccMeanY                
-fBodyAccMeanZ                
-fBodyAccMeanFreqX           
-fBodyAccMeanFreqY            
-fBodyAccMeanFreqZ            
-fBodyAccJerkMeanX           
-fBodyAccJerkMeanY            
-fBodyAccJerkMeanZ            
-fBodyAccJerkMeanFreqX       
-fBodyAccJerkMeanFreqY        
-fBodyAccJerkMeanFreqZ        
-fBodyGyroMeanX              
-fBodyGyroMeanY               
-fBodyGyroMeanZ               
-fBodyGyroMeanFreqX          
-fBodyGyroMeanFreqY           
-fBodyGyroMeanFreqZ           
-fBodyAccMagMean             
-fBodyAccMagMeanFreq          
-fBodyBodyAccJerkMagMean      
-fBodyBodyAccJerkMagMeanFreq 
-fBodyBodyGyroMagMean         
-fBodyBodyGyroMagMeanFreq     
-fBodyBodyGyroJerkMagMean    
-fBodyBodyGyroJerkMagMeanFreq 
-tBodyAccStdX                 
-tBodyAccStdY                
-tBodyAccStdZ                 
-tGravityAccStdX              
-tGravityAccStdY             
-tGravityAccStdZ              
-tBodyAccJerkStdX             
-tBodyAccJerkStdY            
-tBodyAccJerkStdZ             
-tBodyGyroStdX                
-tBodyGyroStdY               
-tBodyGyroStdZ                
-tBodyGyroJerkStdX            
-tBodyGyroJerkStdY           
-tBodyGyroJerkStdZ            
-tBodyAccMagStd               
-tGravityAccMagStd           
-tBodyAccJerkMagStd           
-tBodyGyroMagStd              
-tBodyGyroJerkMagStd         
-fBodyAccStdX                 
-fBodyAccStdY                 
-fBodyAccStdZ                
-fBodyAccJerkStdX             
-fBodyAccJerkStdY             
-fBodyAccJerkStdZ            
-fBodyGyroStdX                
-fBodyGyroStdY                
-fBodyGyroStdZ               
-fBodyAccMagStd
-fBodyBodyAccJerkMagStd
-fBodyBodyGyroMagStd         
-fBodyBodyGyroJerkMagStd
+
+###### testUser        
+..* 1-30 this is the 30 volunteers   NoteA  there is 9 voluteers where in the test data                   
+######Activity
+..* values between 1 to 6  this refers to the activity labels -> 1 WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+######testUser_Mean
+######Activity_Mean
+######tBodyAccMeanX_Mean
+######tBodyAccMeanY_Mean
+######tBodyAccMeanZ_Mean
+######tGravityAccMeanX_Mean
+######tGravityAccMeanY_Mean
+######tGravityAccMeanZ_Mean
+######tBodyAccJerkMeanX_Mean
+######tBodyAccJerkMeanY_Mean           
+######tBodyAccJerkMeanZ_Mean
+######tBodyGyroMeanX_Mean
+######tBodyGyroMeanY_Mean  
+######tBodyGyroMeanZ_Mean
+######tBodyGyroJerkMeanX_Mean
+######tBodyGyroJerkMeanY_Mean          
+######tBodyGyroJerkMeanZ_Mean
+######tBodyAccMagMean_Mean
+######tGravityAccMagMean_Mean          
+######tBodyAccJerkMagMean_Mean
+######tBodyGyroMagMean_Mean
+######tBodyGyroJerkMagMean_Mean        
+######fBodyAccMeanX_Mean
+######fBodyAccMeanY_Mean
+######fBodyAccMeanZ_Mean   
+######fBodyAccMeanFreqX_Mean
+######fBodyAccMeanFreqY_Mean
+######fBodyAccMeanFreqZ_Mean           
+######fBodyAccJerkMeanX_Mean
+######fBodyAccJerkMeanY_Mean
+######fBodyAccJerkMeanZ_Mean           
+######fBodyAccJerkMeanFreqX_Mean
+######fBodyAccJerkMeanFreqY_Mean
+######fBodyAccJerkMeanFreqZ_Mean       
+######fBodyGyroMeanX_Mean
+######fBodyGyroMeanY_Mean
+######fBodyGyroMeanZ_Mean  
+######fBodyGyroMeanFreqX_Mean
+######fBodyGyroMeanFreqY_Mean
+######fBodyGyroMeanFreqZ_Mean          
+######fBodyAccMagMean_Mean
+######fBodyAccMagMeanFreq_Mean
+######fBodyBodyAccJerkMagMean_Mean     
+######fBodyBodyAccJerkMagMeanFreq_Mean
+######fBodyBodyGyroMagMean_Mean
+######fBodyBodyGyroMagMeanFreq_Mean    
+######fBodyBodyGyroJerkMagMean_Mean
+######fBodyBodyGyroJerkMagMeanFreq_Mean
+######tBodyAccStdX_Mean    
+######tBodyAccStdY_Mean
+######tBodyAccStdZ_Mean
+######tGravityAccStdX_Mean 
+######tGravityAccStdY_Mean
+######tGravityAccStdZ_Mean
+######tBodyAccJerkStdX_Mean
+######tBodyAccJerkStdY_Mean
+######tBodyAccJerkStdZ_Mean
+######tBodyGyroStdX_Mean   
+######tBodyGyroStdY_Mean
+######tBodyGyroStdZ_Mean
+######tBodyGyroJerkStdX_Mean           
+######tBodyGyroJerkStdY_Mean
+######tBodyGyroJerkStdZ_Mean
+######tBodyAccMagStd_Mean  
+######tGravityAccMagStd_Mean
+######tBodyAccJerkMagStd_Mean
+######tBodyGyroMagStd_Mean 
+######tBodyGyroJerkMagStd_Mean
+######fBodyAccStdX_Mean
+######fBodyAccStdY_Mean    
+######fBodyAccStdZ_Mean
+######fBodyAccJerkStdX_Mean
+######fBodyAccJerkStdY_Mean
+######fBodyAccJerkStdZ_Mean
+######fBodyGyroStdX_Mean
+######fBodyGyroStdY_Mean   
+######fBodyGyroStdZ_Mean
+######fBodyAccMagStd_Mean
+######fBodyBodyAccJerkMagStd_Mean 
