@@ -56,3 +56,10 @@ There were 50 or more warnings (use warnings() to see the first 50)
 > 
 ```
 
+
+
+####How to write this output to file
+
+
+
+####Explaination of code
