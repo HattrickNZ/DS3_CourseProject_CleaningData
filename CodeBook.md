@@ -14,27 +14,27 @@ I have tried to note this where possible.
 
 
 Regarding the R code I will commit the latest and correct version. 
-***
 ---
-####The following variaable names uses these abbreviations to make up there names: 
+***
+######The following variaable names uses these abbreviations to make up there names: 
+
+- t = time 
+- f = frequency 
+- Body
+- Acc 
+- Mean 
+- X = x-axis
+- Y = y-axis
+- Z = z-axis
+- Gravity
+- Jerk
+- Gyro
+- Mag
+- Freq 
+- Std = standerd deviation
+
  
-'''
--t = time 
--f = frequency 
--Body
--Acc 
--Mean 
--X = x-axis
--Y = y-axis
--Z = z-axis
--Gravity
--Jerk
--Gyro
--Mag
--Freq 
--Std = standerd deviation
-'''
- 
+#Variable Names
 
 ##### testUser        
 - 1-30 this is the 30 volunteers   NoteA  there is 9 voluteers where in the test data                   
