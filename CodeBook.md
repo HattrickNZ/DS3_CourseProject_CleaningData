@@ -37,11 +37,13 @@ Regarding the R code I will commit the latest and correct version.
 #Variable Names
 
 
-#####testUser        
-- 1-30 this is the 30 volunteers   NoteA  there is 9 voluteers where in the test data                   
-#####Activity
+######testUser        
+- 1-30 this is the 30 volunteers   NoteA  there is 9 voluteers where in the test data
+
+######Activity
 - values between 1 to 6  this refers to the activity labels -> 1 WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-#####testUser_Mean
+
+######testUser_Mean
 #####Activity_Mean
 #####tBodyAccMeanX_Mean
 #####tBodyAccMeanY_Mean
