@@ -19,27 +19,27 @@ Regarding the R code I will commit the latest and correct version.
 ####The following variaable names uses these abbreviations to make up there names: 
  
 '''
- t = time 
- f = frequency 
- Body
- Acc 
- Mean 
- X = x-axis
- Y = y-axis
- Z = z-axis
- Gravity
- Jerk
- Gyro
- Mag
- Freq 
- Std = standerd deviation
+-t = time 
+-f = frequency 
+-Body
+-Acc 
+-Mean 
+-X = x-axis
+-Y = y-axis
+-Z = z-axis
+-Gravity
+-Jerk
+-Gyro
+-Mag
+-Freq 
+-Std = standerd deviation
 '''
  
 
 ##### testUser        
-..* 1-30 this is the 30 volunteers   NoteA  there is 9 voluteers where in the test data                   
+- 1-30 this is the 30 volunteers   NoteA  there is 9 voluteers where in the test data                   
 #####Activity
-..* values between 1 to 6  this refers to the activity labels -> 1 WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+- values between 1 to 6  this refers to the activity labels -> 1 WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 #####testUser_Mean
 #####Activity_Mean
 #####tBodyAccMeanX_Mean
