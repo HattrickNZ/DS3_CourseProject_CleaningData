@@ -24,7 +24,7 @@
 run_analysis <- function() {
   
   #1 Merges the training and the test sets to create one data set.
-  #read in files # may need to do this as.is = !stringsAsFactors, as some are classed as factors 
+  #read in files 
   X_train  <- read.table("./UCI HAR Dataset/train/X_train.txt")
   Y_train  <- read.table("./UCI HAR Dataset/train/y_train.txt")
   subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
@@ -35,7 +35,6 @@ run_analysis <- function() {
   features<-read.table("./UCI HAR Dataset/features.txt")
   features[,2]<-as.character(features[,2])
   features<-features[,2]
-  #al<-read.table("./UCI HAR Dataset/activity_labels.txt") #activity labels
   
   # have DF1(train) and DF2 (test)
   train <- X_train
@@ -44,23 +43,23 @@ run_analysis <- function() {
   # give DF variable names 
   names(train)<-features
   names(test)<-features
-  
+
+  #2 Extracts only the measurements on the mean and standard deviation for each measurement.
   # get DF variable names that need to be dropped 
   col_mean <- "mean" # want col headers containing ""mean"(and "Mean") and "std"
   col_std <- "std"
-  col_all <- features   # all the column headers
+  col_all <- features   # all the column headers of interest
   #a <- grep(col_mean,col_all,ignore.case = TRUE) # this will include Mean but don't think I want that
   a <- grep(col_mean,col_all)
   b <- grep(col_std,col_all)
   col_wanted <- append(a,b)  # these are the columns that  I want 
   
-  #2 Extracts only the measurements on the mean and standard deviation for each measurement. 
-  # drop variable names, only want mean,Mean(can use ignore.case),std
+  # drop variable names, only want mean & std  # was not interested in Mean(can use ignore.case)
   train <- train[,col_wanted]    # select the columns that I want 
   test <- test[,col_wanted]
 
   #4 Appropriately labels the data set with descriptive variable names. 
-  #e.g. "tBodyGyro-max()-Z"  becomes "tBodyGyro_maxZ"
+  #e.g. "tBodyGyro-max()-Z"  becomes "tBodyGyroMaxZ"
   #tidy features names to be more friendly
   colNames <- names(train)
   colNames <- gsub("-mean\\()-","Mean",colNames)
@@ -98,18 +97,22 @@ run_analysis <- function() {
   #5 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
   a<-list(final$testUser,final$Activity)
   fd<-aggregate(final, by=a, FUN=mean)   # fd(final dataset) 
-  colnames(fd)[1] <- "testUser" 
+
+  fd$testUser <- NULL  # remove these as created from the above aggregate function
+  fd$Activity <- NULL
+  fd$testTrain <- NULL
+
+  colnames(fd)[1] <- "testUser"   ## these are called group1 & 2 rename them appropiately
   colnames(fd)[2] <- "Activity"
+  
   #4 Appropriately labels the data set with descriptive variable names. 
   #e.g. append "_Mean" to the column names 
-  colnames(fd)[3:length(names(fd))] <- paste(colnames(fd),"Mean", sep = "_") # append "_Mean" to these column names for clarity
-  fd$testUser_Mean <- NULL
-  fd$Activity_Mean <- NULL
-  fd$testUser_Mean.1 <- NULL
-  fd$Activity_Mean.1 <- NULL
-  fd$testTrain_Mean <- NULL
+  colnames(fd)[3:length(names(fd))] <- paste(colnames(fd)[3:length(names(fd))],"Mean", sep = "_") # append "_Mean" to these column names for clarity
   
-  fd # return final dataset
+  # final #1 Merges the training and the test sets to create one data set. #return this 
+  
+  #5 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+  fd # return final dataset  
 
   
 }
